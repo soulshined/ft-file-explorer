@@ -1,0 +1,50 @@
+[
+    {
+        "name": "rootPath",
+        "description": "Set the first 'file' that displays on load. If omitted, the first file found will be selected",
+        "values": "<string>",
+        "default": "null"
+    },
+    {
+        "name": "expandFolders",
+        "description": "Enables/disables if folders are expanded on load",
+        "values": "<boolean>",
+        "default": false
+    },
+    {
+        "name": "explorerStyle",
+        "description": "Shows the explorer in one of allowed styles",
+        "values": "<string>",
+        "default" : "material"
+    },
+    {
+        "name": "buttons.addFile.visible",
+        "description": "Include the 'Add File' button for a given explorer tree",
+        "values": "<boolean>",
+        "default": true
+    },
+    {
+        "name": "buttons.addFolder.visible",
+        "description": "Include the 'Add Folder' button for a given explorer tree",
+        "values": "<boolean>",
+        "default": true
+    },
+    {
+        "name": "buttons.delete.visible",
+        "description": "Include the 'Delete' button for a given explorer tree",
+        "values": "<boolean>",
+        "default": true
+    },
+    {
+        "name": "allowKeyboardEventsOnFocus",
+        "description": "Allows users to use pre-determined keyboard shortcuts while they are navigating the tree with arrow keys and on focus",
+        "values": "<boolean>",
+        "default": true
+    },
+    {
+        "name": "buttons.*.text",
+        "description": "Customize the text for a button listed below",
+        "values": "<string>",
+        "default": "Button Name"
+    }
+]

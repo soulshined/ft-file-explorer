@@ -1,0 +1,12 @@
+{
+    "rootDir" : "./docs",
+    "exportDir": "./docs",
+    "prettify": true,
+    "excluded": [
+        "**/imports/**",
+        "documentation.fthtml"
+    ],
+    "globalvars": {
+        "IS_DEBUG" : "false"
+    }
+}

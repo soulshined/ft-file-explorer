@@ -1,0 +1,34 @@
+div (#documentation) {
+
+    div
+    {
+        div (style='width: 100%; overflow-x:auto;') {
+            h2 'Options'
+            table
+            {
+                tr
+                {
+                    th 'Property' th 'Description' th 'Values'
+                }
+
+                #vars
+                    opts json("options")
+                #end
+
+                each sort(@opts 'asc' name) {
+                    tr
+                    {
+                        td @this.name
+                        td @this.description
+                        td
+                        {
+                            span (.code-inline) html_encode(@this.values)
+                            span (.bold) @this.default
+                        }
+                    }
+                }
+            } // end of table
+        }
+    }
+
+}

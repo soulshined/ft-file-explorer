@@ -1,0 +1,49 @@
+doctype "html"
+html (lang=en) {
+
+    head
+    {
+        title "ft-file-explorer demo"
+        #if @IS_DEBUG eq "true"
+            script (src='../src/ft-file-explorer.js')
+        #else
+            script (src='./js/ft-file-explorer.min.js')
+        #end
+        script (src="./js/main.js" defer)
+        link (href="./css/main.css" rel=stylesheet)
+    }
+
+    body
+    {
+        header
+        {
+            "FT-File-Explorer"
+            div
+            {
+                a (href='https://github.com/soulshined/ft-file-explorer' style="margin-right: 5px") 'github'
+                "@soulshined"
+            }
+        }
+
+        main
+        {
+            h2 "Material Style"
+            div (#fs)
+            hr
+            h2 "Compact Style"
+            div (#fs2)
+            hr
+            h2 "With Custom CSS"
+            p
+            {
+                "See: "
+                a (href="./css/main.css") "./css/main.css"
+                " demo section for example usage"
+            }
+            div (#fs3)
+
+            import "documentation"
+        }
+    }
+
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/** CUSTOM EXPLORER CSS DEMOSTRATION */
+/*
+  There are very few css property values implemented inline via javascript.
+  Generally, you can override anything with the exception of some padding.
+
+  Even then, all you have to is use !important
+ */
+main > .ft-file-explorer:nth-of-type(3) {
+  --ft-fe-active: red;
+  --ft-fe-hover: purple;
+  font-size: 30px;
+}
+
+main > .ft-file-explorer:nth-of-type(3) button {
+  font-family: Roboto;
+  cursor: pointer;
+  padding: .25rem;
+  border-radius: .3rem;
+  background-color: transparent;
+  user-select: none;
+  border: 1px solid lightgray;
+  margin: 1px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+main > .ft-file-explorer:nth-of-type(3) button:hover {
+  color: #fff;
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+main > .ft-file-explorer:nth-of-type(3) button.delete {
+  border-color: tomato;
+}
+
+main > .ft-file-explorer:nth-of-type(3) button.delete:hover {
+  background-color: tomato;
+}
+
+main > .ft-file-explorer:nth-of-type(3) button.delete:disabled {
+  background-color: transparent;
+  border-color: lightgray;
+  color: lightgray;
+  cursor: not-allowed;
+}
+/** END OF CUSTOM EXPLORER CSS */
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  height: 50px;
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px 15px;
+  font-family: Roboto;
+  justify-content: space-between;
+}
+
+header a:any-link {
+  background: unset;
+  border: 1px solid rgba(240, 240, 240, 0.5);
+  color: rgba(240, 240, 240, 0.94);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+header a:hover {
+  border-color: white;
+  color: white;
+}
+
+main {
+  padding: 15px
+}
+
+h2 {
+  font-family: Roboto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#documentation {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-top: none;
+  border-right: unset;
+  border-left: unset;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+}
+
+#documentation>div {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}

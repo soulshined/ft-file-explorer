@@ -1,0 +1,90 @@
+<!--
+
+        Made with ftHTML - and a side of love.
+
+        Created by David Freer
+
+        Learn more about ftHTML and why it's so fun to use at https://fthtml.com
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ft-file-explorer demo</title>
+    <script src="./js/ft-file-explorer.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>FT-File-Explorer<div><a href="https://github.com/soulshined/ft-file-explorer" style="margin-right: 5px">github</a>@soulshined</div>
+    </header>
+    <main>
+        <h2>Material Style</h2>
+        <div id="fs"></div>
+        <hr />
+        <h2>Compact Style</h2>
+        <div id="fs2"></div>
+        <hr />
+        <h2>With Custom CSS</h2>
+        <p>See: <a href="./css/main.css">./css/main.css</a> demo section for example usage</p>
+        <div id="fs3"></div>
+        <div id="documentation">
+            <div>
+                <div style="width: 100%; overflow-x:auto;">
+                    <h2>Options</h2>
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>allowKeyboardEventsOnFocus</td>
+                            <td>Allows users to use pre-determined keyboard shortcuts while they are navigating the tree with arrow keys and on focus</td>
+                            <td><span class="code-inline">&#x3C;boolean&#x3E;</span><span class="bold">true</span></td>
+                        </tr>
+                        <tr>
+                            <td>buttons.*.text</td>
+                            <td>Customize the text for a button listed below</td>
+                            <td><span class="code-inline">&#x3C;string&#x3E;</span><span class="bold">Button Name</span></td>
+                        </tr>
+                        <tr>
+                            <td>buttons.addFile.visible</td>
+                            <td>Include the 'Add File' button for a given explorer tree</td>
+                            <td><span class="code-inline">&#x3C;boolean&#x3E;</span><span class="bold">true</span></td>
+                        </tr>
+                        <tr>
+                            <td>buttons.addFolder.visible</td>
+                            <td>Include the 'Add Folder' button for a given explorer tree</td>
+                            <td><span class="code-inline">&#x3C;boolean&#x3E;</span><span class="bold">true</span></td>
+                        </tr>
+                        <tr>
+                            <td>buttons.delete.visible</td>
+                            <td>Include the 'Delete' button for a given explorer tree</td>
+                            <td><span class="code-inline">&#x3C;boolean&#x3E;</span><span class="bold">true</span></td>
+                        </tr>
+                        <tr>
+                            <td>expandFolders</td>
+                            <td>Enables/disables if folders are expanded on load</td>
+                            <td><span class="code-inline">&#x3C;boolean&#x3E;</span><span class="bold">false</span></td>
+                        </tr>
+                        <tr>
+                            <td>explorerStyle</td>
+                            <td>Shows the explorer in one of allowed styles</td>
+                            <td><span class="code-inline">&#x3C;string&#x3E;</span><span class="bold">material</span></td>
+                        </tr>
+                        <tr>
+                            <td>rootPath</td>
+                            <td>Set the first 'file' that displays on load. If omitted, the first file found will be selected</td>
+                            <td><span class="code-inline">&#x3C;string&#x3E;</span><span class="bold">null</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
